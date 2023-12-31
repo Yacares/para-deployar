@@ -1,20 +1,37 @@
-import { useEffect } from "react";
-import { loadCountries } from "../../redux/action/action";
-import Cards from "../../components/cards/cards"
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { loadCountries, changePage, loadActivities } from "../../redux/action/action";
+import Cards from "../../components/cards/cards";
+import './home.css'
 
-useEffect(()=>{
+function Home() {
+  const dispatch = useDispatch();
+  const countries = useSelector((state) => state.countries.countries);
+  const pagination = useSelector((state) => state.countries.pagination);
+  const activities = useSelector((state) => state.activities.activities);
+
+  console.log('Activities:', activities);
+
+  useEffect(() => {
     dispatch(loadCountries());
-},[dispatch]);
+    dispatch(loadActivities());
+  }, [dispatch]);
 
 
 
+  return (
 
-function Home(){
-    return(
-    <div>
-     <Cards countries={countries}/>
-    </div>
-    )
-    }
-    
-    export default Home;
+
+    <div className="contenedor-home">
+     
+      <Cards
+        countries={countries}
+        pagination={pagination}
+        activities={activities}
+        changePage={(page) => dispatch(changePage(page))}
+      />
+    </div >
+  );
+}
+
+export default Home;

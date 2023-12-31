@@ -1,0 +1,134 @@
+.whole-container {
+    position: absolute;
+    margin: 20px;
+    width: 90%;
+
+
+}
+
+
+.img-hero {
+    background-image: url("https://wallpapers.com/images/hd/minimalist-country-flags-world-map-t6ayx5bonu2l1a16.jpg");
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.navbar-cards {
+    overflow: hidden;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 320px;
+    color: #f2f2f2;
+    padding: 14px 16px;
+}
+
+
+.nav-buttons {
+    background-color: #212121;
+    font-family: sans-serif;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.nav-buttons:hover{
+    color: white;
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 150px;
+    row-gap: 70px;
+    margin-top: 50px;
+}
+
+.list-navbar {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.dropdown-menu {
+    background-color: #212121;
+    font-family: sans-serif;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.dropdown-menu:focus {
+    color: white;
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
+
+.footer-cards {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.searchbar {
+    background-color: #212121;
+    color: white;
+    max-width: 190px;
+    height: 10px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.searchbar-container {
+    position: relative;
+    display: inline-block;
+}
+
+.searchbar-button {
+    position: absolute;
+    background-color: transparent;
+    color: wheat;
+    font-weight: bold;
+    border: none;
+    top: 10px;
+    right: 5px;
+    
+}
+
+
+.searchbar:focus {
+    color: white;
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
+.footer-cards{
+    display: flex;
+    justify-content: space-evenly;
+}

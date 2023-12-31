@@ -1,0 +1,14 @@
+
+body{
+width: 100%;
+}
+
+.contenedor-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+
