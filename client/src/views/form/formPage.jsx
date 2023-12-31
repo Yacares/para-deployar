@@ -144,7 +144,6 @@ function FormPage() {
 
   return (
     <div className='form-container'>
-      <Link to="/home"> <button className='form-buttons'>Home</button></Link>
       {isSuccess ? (
         <div className='success-container'>
           <h1 className='main-title'>Upload has been successful</h1>
@@ -155,6 +154,7 @@ function FormPage() {
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
+           <div className='input-container'><Link to="/home"> <button className='form-buttons'>Home</button></Link></div>
           <h1 className='main-title'>Create New Activity</h1>
           <div className='input-container'>
             <label className="label-form" htmlFor="name">

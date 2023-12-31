@@ -166,7 +166,7 @@ const Cards = ({ countries, pagination, activities, changePage }) => {
               id="continentDropdown"
               onChange={(e) => handleContinentFilterChange(e.target.value === 'Todos' ? null : e.target.value, 1)}
             >
-              <option value="Todos">Todos</option>
+              <option value="Todos">All</option>
               {getUniqueContinents(countries).map((continent) => (
                 <option key={continent} value={continent}>
                   {continent}
