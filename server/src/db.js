@@ -10,10 +10,6 @@ const {
 const sequelize = new Sequelize(DB_DEPLOY, {
   logging: false, 
   native: false, 
-  dialectOptions: {
-    ssl: true, // Habilita SSL
-    rejectUnauthorized: false, // Deshabilita la verificación del certificado SSL
-  },
 });
 const basename = path.basename(__filename);
 
